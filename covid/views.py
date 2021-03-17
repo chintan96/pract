@@ -8,6 +8,7 @@ import psutil
 import plotly.graph_objects as go
 import pycountry
 from django.views.decorators.csrf import csrf_exempt
+from .tasks import *
 # Create your views here.
 @csrf_exempt
 def get_data(request):
