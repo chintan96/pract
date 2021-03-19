@@ -46,7 +46,7 @@ def get_data(request):
         if send_email:
             fig = go.Figure(data=[go.Scatter(name='active',y=[s['active'] for s in timeline],x=[s['date'] for s in timeline]),go.Scatter(name='deaths',y=[s['deaths'] for s in timeline],x=[s['date'] for s in timeline]),go.Scatter(name='new confirmed',y=[s['new_confirmed'] for s in timeline],x=[s['date'] for s in timeline]),go.Scatter(name='new recovered',y=[s['new_recovered'] for s in timeline],x=[s['date'] for s in timeline]),go.Scatter(name = 'new deaths',y=[s['new_deaths'] for s in timeline],x=[s['date'] for s in timeline])])
             fig.write_image('figure.png')
-            send_email_image(user.email,email,'figure.png')
+            send_email_image.delay(user.email,email,'figure.png')
         overall_data = r.json()['data']['latest_data']
         country_name = r.json()['data']['name']
         response = {
