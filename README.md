@@ -2,14 +2,14 @@
 Practical Task Backend
 
 Python 3.8.5 / Django 3.1 was used to create this project on Ubuntu 20.04 LTS machine in a virtual environment.
-Rest of the requirements can be found in requirements.txt
+Rest of the requirements can be found in requirements.txt.
 
 Steps:
-Install Python 3.8.5
-Create a virtualenv/venv from python3.8.5
-Activate venv
-Install all the requirements from requirements.txt
-Run the project
+Install Python 3.8.5.
+Create a virtualenv/venv from python3.8.5.
+Activate venv.
+Install all the requirements from requirements.txt.
+Run the project.
 
 
 
