@@ -17,7 +17,7 @@ How to:
 for sign up visit "/api/signup/sign_up/" with body containing json data of "first_name", "last_name", "email", "country" and "password"
 after signup a token will be returned which shall be used as API Token.
 
-for covid data visit "api/covid/get_data" with header containing api token as "token" and body containing json data of "email"(email to send image to), "country", "start_date" and "end_date" in ISO format and a boolean value "send_email" to determine if an email has to be send or not.
+for covid data visit "api/covid/get_data/" with header containing api token as "token" and body containing json data of "email"(email to send image to), "country", "start_date" and "end_date" in ISO format and a boolean value "send_email" to determine if an email has to be send or not.
 
 
 
